@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://thisInterior.netlify.app/">
+    <a href="https://deeinterior.netlify.app/">
       Demo
     </a>
     <span> | </span>
@@ -73,6 +73,6 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 ## Contact
 
-- Website [netlify](https://thisInterior.netlify.app/)
+- Website [netlify](https://deeinterior.netlify.app/)
 - GitHub [TobiOgunledun](https://github.com/TobiOgunledun)
 - Twitter [@tob140](https://twitter.com/tob140)

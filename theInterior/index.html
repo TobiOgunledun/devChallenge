@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+  maximum-scale=5"
+    />
+
+    <link rel="icon" href="devchallenges.png" />
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://devchallenges.io/"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+
+    <title>Devchallenges</title>
+
+    <!-- :::::ICONS LINK FROM LOCAL TEMPLATE SOURCE OFFLINE:::::: -->
+	<link rel="stylesheet" href="file:///C:/Users/User/Desktop/iTins/icons/fontawesome-free-6.1.1-web/css/all.css">
+
+
+  <!-- :::::::::::ICONS-LINK ONLINE:::::::::::::::::: -->
+  <script src="https://kit.fontawesome.com/2bbbf54a3f.js" crossorigin="anonymous"></script>
+
+
+
+  </head>
+  <body>
+    <nav>
+      <label for="logo">this interior</label>
+      <ul id="navMenu">
+        <i class="fas fa-times cancel" id="cancel" onclick="hideMenu()"></i>
+        <li><a href="#">home</a></li>
+        <li><a href="#">collection</a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#">contact</a></li>
+      </ul>
+      <i class="fas fa-bars" id="open" onclick="showMenu()"></i>
+     
+
+    </nav>
+    
+    <section class="home" id="home">
+      <div class="container">
+        <div class="text">
+          <h1>Modern Interior</h1>
+          <p>
+            A full-Service residential & commercial interior design and staging 
+            company offering professional organizing & eco-services.
+          </p>
+          <button>Read more <i class="fas fa-arrow-right"></i></button>
+        </div>
+
+        <div class="image">
+          <img src="./photo1.png" alt="">
+          <div class="profile">
+            <div class="heading">
+              <div class="img">
+                <img src="./photo2.png" alt="">
+              </div>
+              
+              <div class="headingText">
+                <h2>Aliza Webbar</h2>
+                <p>Interior designer</p>
+              </div>
+            </div>
+            <h2>Designed in 2022 by Aliza Webber</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>designed by <a href="https://github.com/TobiOgunledun">TobiOgunledun</a> - devchallenges.io </p>
+    </footer>
+    
+
+    <script>
+      const navMenu = document.getElementById("navMenu");
+      const openMenu = document.getElementById("open");
+      const closeMenu = document.getElementById("cancel");
+      const body = document.getElementsByTagName("html")[0];
+
+
+      function showMenu(){
+        navMenu.style.left = "0";
+        body.style.overflow = "hidden";
+      }
+
+      function hideMenu(){
+        navMenu.style.left = "";
+        body.style.overflow = "";
+
+      }
+
+    </script>
+  </body>
+</html>

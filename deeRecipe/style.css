@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700;800&family=Playfair+Display:wght@400;500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+section{
+    width: 80%;
+    margin: 0 auto;
+}
+header{
+    padding: 1em 0;
+}
+header h1{
+    font-weight: 700;
+    font-size: 48px;
+    font-style: normal;
+    text-transform: capitalize;
+    font-family: 'Playfair Display', serif;
+}
+.content1{
+    position: relative;
+    width: 100%;
+    padding: 1em;
+}
+.content1 svg{
+    position: absolute;
+    top: 1em;
+    left: 0;
+}
+.content1 p{
+    font-size: 1.1em;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 110%;
+}
+.first .image{
+    padding: 1em 0;
+    width: 100%;
+    transition: all 1s ease;
+}
+.first .image:hover{
+    transform: scale(.95);
+    filter: grayscale(.5);
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 1em 0;
+    /* gap: 1em; */
+    text-align: start;
+}
+.container aside{
+    width: 100%;
+    padding: 1em;
+    box-shadow: 0 5px 10px rgba(0,0,0,.5);
+    border-radius: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+}
+.container aside .menuTiming:first-child{
+    width: 100%;
+}
+.container aside .menuTiming{
+    width: calc(100/3);
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: .6em
+}
+.container aside .content h3{
+    text-transform: uppercase;
+    /* font-weight: 100; */
+    font-size: 10px;
+    font-style: normal;
+    color: #BDBDBD;
+}
+.container aside .content p{
+    font-size: 14px;
+    line-height: 17px;
+}
+#heading h1{
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-style: normal;
+    font-family: 'Playfair Display', serif;
+
+}
+.container .content2{
+    width: 100%;
+}
+.container .content2 h1{
+   padding: .5em 0;
+   font-style: italic;
+   font-weight: 400;
+   font-family: 'Playfair Display', serif;
+}
+.container .content2 span{
+    font-weight: 700;
+}
+.container .content2 .recipe{
+    display: flex;
+    gap: 1em;
+    align-items: flex-start;
+    padding: .5em 0;
+}
+.container .content2 .recipe p{
+    font-size: 16px;
+    /* line-height: 25px; */
+}
+.third ol{
+    counter-reset: li;
+    position: relative;
+    list-style: none;
+}
+.third ol li{
+    padding: .5em 0;
+    counter-increment: li;
+    position: relative;
+    
+}
+.third ol li::before{
+    display: inline-block;
+    content: counter(li);
+    position: absolute;
+    top: 1em;
+    left: 0;
+    color: #fff;
+    background: #F2994A;
+    border-radius: .3em;
+    text-align: center;
+    padding: .2em .3em;
+    font-size: 1.2em;
+    font-family: 'Playfair Display', serif;
+
+}
+.third ol li p{
+    font-size: 1.1em;
+    font-weight: 400;
+    line-height: 150%;
+    padding-left: 2em;
+}
+footer{
+    /* width: 100%; */
+    text-align: center;
+    padding: 1em .6em;
+    color: #4f4f4f;
+    opacity: .7;
+    margin-top: 1em;
+}
+footer p{
+    font-weight: 400;
+}
+footer a{
+    color: #4f4f4f;
+    font-weight: 700;
+}
+
+@media (min-width: 980px){
+    .content1 p{
+        width: 70%;
+    }
+    .container{
+        flex-direction: row-reverse;
+    }
+    .container aside{
+        width: 15%;
+        gap: 2em;
+        padding: 1em;
+    }
+    .container aside .menuTiming{
+        width: 100%;
+    }
+    .container .content2{
+        max-width: 80%;
+    }
+}
+@media (min-width: 700px) and (max-width: 980px) {
+    .content1 p{
+        width: 70%;
+    }
+    .container{
+        flex-direction: row-reverse;
+    }
+    .container aside{
+        width: 15%;
+        gap: 2em;
+        padding: 1em;
+    }
+    .container aside .menuTiming{
+        width: 100%;
+    }
+    .container .content2{
+        width: 80%;
+    }
+}
